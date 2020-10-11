@@ -1,44 +1,40 @@
 export const questions = [
   {
     label: 'Como se llaman las conexiones entre neuronas?',
+    type: 'multiple',
     options: [
       {
         label: 'Conexion',
-        correct: false,
       },
       {
         label: 'Circuito',
-        correct: true,
       },
       {
         label: 'Sinapsis',
-        correct: true,
       },
       {
         label: 'Accion Potencial',
-        correct: false,
       },
     ],
+    answers: [2],
   },
   {
     label: 'Que particulas forman a un proton?',
+    type: 'multiple',
     options: [
       {
-        label: 'Quarks',
-        correct: false,
+        label: 'Quarks Up',
       },
       {
         label: 'Muones',
-        correct: true,
       },
       {
-        label: 'Axiones',
-        correct: true,
+        label: 'Quarks Down',
       },
       {
         label: 'Bosones W',
-        correct: false,
       },
     ],
+    answers: [1, 2],
   },
 ];
