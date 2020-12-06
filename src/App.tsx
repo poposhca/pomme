@@ -1,12 +1,14 @@
 import React from 'react';
 import './App.css';
-import Subject from './Components/Subject';
-import { questions } from './mock/question.tmp';
+import GuestLogin from './Components/GuestLogIn';
+// import Subject from './Components/Subject';
+// import { questions } from './mock/question.tmp';
 
 function App() {
   return (
     <div className="App">
-      <Subject questions={questions} />
+      <GuestLogin />
+      {/* <Subject questions={questions} /> */}
     </div>
   );
 }
