@@ -8,6 +8,6 @@ export interface Question {
   answers: number[];
 }
 
-export default interface SubjectProps {
-  questions: Question[];
+export default interface SubjectParams {
+  id: string;
 }

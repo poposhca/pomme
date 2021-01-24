@@ -10,7 +10,6 @@ import GuestLogin from './Components/GuestLogIn';
 import Subjects from './Components/Subjects'
 import Subject from './Components/Subject';
 // Mocks
-import { questions } from './mock/question.tmp';
 import { subjects } from './mock/subjects.tmp';
 
 function App() {
@@ -23,8 +22,8 @@ function App() {
             <Subjects subjects={subjects} />
           </Route>
           {/* Route after login is a mock test  */}
-          <Route path="/subject">
-            <Subject questions={questions} />
+          <Route path="/subject/:id">
+            <Subject />
           </Route>
           {/* Default route is the login */}
           <Route path="/">

@@ -1,4 +1,4 @@
-export const questions = [
+const questions = [
   {
     label: 'Como se llaman las conexiones entre neuronas?',
     type: 'multiple',
@@ -38,3 +38,5 @@ export const questions = [
     answers: [1, 2],
   },
 ];
+
+export default questions;

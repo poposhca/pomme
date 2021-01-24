@@ -6,9 +6,10 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import { Theme, createStyles, makeStyles } from '@material-ui/core/styles';
+import { Link } from 'react-router-dom';
 import Subject from './domain';
 // Mock image
-import mockImage from '../../mock/subject-img-mock.jpg'
+import mockImage from '../../mock/subject-img-mock.jpg';
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
@@ -45,14 +46,16 @@ const Subjects = ({ subjects }: any) => {
                             <Grid item md={4}>
                                 <Card className={classes.subject}>
                                     <CardActionArea>
-                                        <CardMedia
-                                            image={mockImage}
-                                            title="Testing"
-                                            className={classes.media}
-                                        />
-                                        <CardContent>
-                                            <h2>{subject.name}</h2>
-                                        </CardContent>
+                                        <Link to={'/subject/'+subject.id} >
+                                            <CardMedia
+                                                image={mockImage}
+                                                title="Testing"
+                                                className={classes.media}
+                                            />
+                                            <CardContent>
+                                                <h2>{subject.name}</h2>
+                                            </CardContent>
+                                        </Link>
                                     </CardActionArea>
                                 </Card>
                             </Grid>
