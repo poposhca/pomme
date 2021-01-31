@@ -9,6 +9,7 @@ import './App.css';
 import GuestLogin from './Components/GuestLogIn';
 import Subjects from './Components/Subjects'
 import Subject from './Components/Subject';
+import QuestionStats from './Components/QuestionStats';
 // Mocks
 import { subjects } from './mock/subjects.tmp';
 
@@ -20,6 +21,9 @@ function App() {
           {/* Route after login is a mock test  */}
           <Route path="/subjects">
             <Subjects subjects={subjects} />
+          </Route>
+          <Route path="/test">
+            <QuestionStats />
           </Route>
           {/* Route after login is a mock test  */}
           <Route path="/subject/:id">
