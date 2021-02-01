@@ -1,7 +1,7 @@
 interface Subject {
-    id: string;
-    name: string;
-    image: string;
+  id: string;
+  name: string;
+  image: string;
 }
 
 export default Subject;

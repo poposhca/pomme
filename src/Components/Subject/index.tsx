@@ -15,9 +15,9 @@ const setQuestion = (totalQuestions: number, nextQuestion: number, setActualQues
 };
 
 //TODO extract function
-const getQuiz = (id:string) => {
-  if(id === '1') return questions1;
-  if(id === '2') return questions2;
+const getQuiz = (id: string) => {
+  if (id === '1') return questions1;
+  if (id === '2') return questions2;
   return null;
 };
 
@@ -32,7 +32,7 @@ const Subject = () => {
     setQuiz(quizObject);
   }, [id]);
 
-  if(quiz) {
+  if (quiz) {
     return (
       <>
         <MultipleOptionQuestion {...quiz[actualQuestion]} />
@@ -46,7 +46,7 @@ const Subject = () => {
     );
   }
 
-  return (<h1>NO SUBJECT FOUND</h1>)
+  return <h1>NO SUBJECT FOUND</h1>;
 };
 
 export default Subject;
