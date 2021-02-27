@@ -4,4 +4,8 @@ interface Subject {
   image: string;
 }
 
+export interface SubjectProps {
+  subjects: Array<Subject>;
+}
+
 export default Subject;

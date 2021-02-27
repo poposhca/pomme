@@ -1,9 +1,9 @@
 import React from 'react';
 import Grid from '@material-ui/core/Grid';
 import SubjectCard from '../SubjectCard';
-import Subject from './domain';
+import Subject, { SubjectProps } from './domain';
 
-const Subjects = ({ subjects }: any) => {
+const Subjects = ({ subjects }: SubjectProps) => {
   let rowsNumber = Math.floor(subjects.length / 3);
   console.log(rowsNumber);
   if (subjects.length % 3 > 0) rowsNumber += 1;

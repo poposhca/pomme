@@ -6,7 +6,6 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import { Link } from 'react-router-dom';
 import { Theme, createStyles, makeStyles } from '@material-ui/core/styles';
-import Subject from '../Subject/Subject.typed';
 import UserName from '../../Utils/UserName';
 // Mock image
 import mockImage from '../../mock/subject-img-mock.jpg';
@@ -32,7 +31,7 @@ const SubjectCard = ({ subject }: any) => {
 
   // Set correct page Link
   let route: string;
-  if (name === 'admin') route = '/test';
+  if (name === 'admin') route = '/subject/stats/' + subject.id;
   else route = '/subject/' + subject.id;
 
   return (
